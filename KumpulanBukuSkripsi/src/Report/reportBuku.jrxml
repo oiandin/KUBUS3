@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1ba86b5e-62c4-4acb-a42f-636c1ad3ad61">
+	<property name="ireport.zoom" value="1.2100000000000009"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM buku;]]>
+	</queryString>
+	<field name="kodebuku" class="java.lang.String"/>
+	<field name="judulbuku" class="java.lang.String"/>
+	<field name="subjudulbuku" class="java.lang.String"/>
+	<field name="pengarang" class="java.lang.String"/>
+	<field name="penerbit" class="java.lang.String"/>
+	<field name="tahunterbit" class="java.lang.Integer"/>
+	<field name="halaman" class="java.lang.Integer"/>
+	<field name="isbn" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="27" width="555" height="20" uuid="a17757d5-c439-4d52-b2a2-499d8dbe1a3b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Dialog" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN BUKU PROGRAM STUDI SISTEM INFORMASI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="47" width="555" height="20" uuid="9568c90d-fc90-49e0-8607-187d9d859223"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Dialog" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UIN SUNAN AMPEL SURABAYA]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="408" y="0" width="48" height="20" uuid="6f4d66ce-dae3-4c3e-ba26-fff9447fc7d5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="6" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Tanggal cetak:]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="455" y="0" width="100" height="20" uuid="a7b49401-363c-4929-8224-adef481329bc"/>
+				<textElement verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="54" height="20" uuid="24a25bb9-642c-4f57-8250-ff5cd68bfeed"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="54" y="0" width="100" height="20" uuid="c0a480c0-54e4-40ac-b0bf-5412edbb4726"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="154" y="0" width="100" height="20" uuid="5c73a69f-1320-4007-90cc-9c527d467a5b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="254" y="0" width="100" height="20" uuid="965b6b69-c4f6-45b4-a0a7-9635d3a1c8a2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="354" y="0" width="54" height="20" uuid="03d02f04-ee4a-49b5-8db8-d5c2134594fe"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="408" y="0" width="47" height="20" uuid="43b82dec-588d-4180-819d-b47d6504a5aa"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="455" y="0" width="100" height="20" uuid="91103b28-babd-4871-89fd-8b457126ed31"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="54" height="19" uuid="b132f8ab-8f02-4159-be2a-e7ad83dcfc87"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Dialog" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KODE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="54" y="0" width="100" height="19" uuid="f4bedc37-6623-4a92-864c-fdb9d91a2a42"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Dialog" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JUDUL BUKU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="154" y="0" width="100" height="19" uuid="0f0066ef-3103-4cb5-bed9-e25fc7cc5c13"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Dialog" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUBJUDUL BUKU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="254" y="0" width="100" height="19" uuid="9fe2728b-bc4e-4ccc-b8c9-70b95a121404"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Dialog" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PENERBIT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="354" y="0" width="53" height="19" uuid="2bc7f31f-12a2-4121-abda-ffaaab699605"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Dialog" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TAHUN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="408" y="0" width="47" height="19" uuid="9adc9c4e-95ae-46f5-b12a-f926a89e7d86"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Dialog" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HALAMAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="0" width="100" height="19" uuid="ddca7856-a020-4aad-ac9a-a0490003954f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Dialog" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ISBN]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="54" height="20" uuid="f78f8d02-8cbe-4a7d-beac-47b3845fa230"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="54" y="0" width="100" height="20" uuid="612faaa6-e884-452d-b38e-2edd9fe40b5c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="154" y="0" width="100" height="20" uuid="d4a49511-2f40-4801-a5ee-dc4d5c1625f7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="254" y="0" width="100" height="20" uuid="9f3afa13-7e2c-4530-999c-e95831d8e2a2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="354" y="0" width="53" height="20" uuid="ffd01e78-2441-46c1-bdce-cc67854877ec"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="408" y="0" width="47" height="20" uuid="781442dc-e928-47af-bb38-cf239e321f3c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="455" y="0" width="100" height="20" uuid="a8cbb1f7-0e89-4ba2-a1c0-376349321e70"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="3" width="54" height="17" uuid="36ffcd09-c731-4dda-84e0-df52474ffdfa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Dialog" size="6" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kodebuku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="54" y="3" width="100" height="17" uuid="1acb45e9-0ef2-4633-bb45-51f09a37ac1e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Dialog" size="6" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{judulbuku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="154" y="3" width="100" height="17" uuid="f5aa8e43-217f-49f6-bc51-b83ea7f5f7f5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Dialog" size="6" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{subjudulbuku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="254" y="3" width="100" height="17" uuid="5e0a7525-1de0-4d55-a7ab-37cebed1791c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Dialog" size="6" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{penerbit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="354" y="3" width="54" height="17" uuid="20e62996-cfc1-4e7f-98ab-91f147645e1f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Dialog" size="6" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tahunterbit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="408" y="3" width="47" height="17" uuid="44122459-4ee1-4dad-9ade-7572b433de40"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Dialog" size="6" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{halaman}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="3" width="100" height="17" uuid="28b1979e-9bca-420d-9154-f012817fd882"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Dialog" size="6" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{isbn}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="29" width="80" height="20" uuid="47d64cb1-2fcd-408a-924d-20e3bcd55597"/>
+				<textElement textAlignment="Right">
+					<font size="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="80" y="29" width="56" height="20" uuid="36c41aa4-efee-4af6-9557-0014afd797d4"/>
+				<textElement>
+					<font size="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
