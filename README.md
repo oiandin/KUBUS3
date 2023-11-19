@@ -4,7 +4,7 @@ KUBUS berfungsi untuk menyimpan Buku dan Skripsi dari program studi sistem infor
 ### **Progress ke 3:**
 Tambahan fitur progres ketiga adalah cetak laporan buku hasil setelah dilakukan pencarian, <br>
 ### **Tampilan ketika program dijalankan:**
-1. Jalankan program: 
+1. Jalankan program: <br>
 ![gambar](https://github.com/oiandin/KUBUS3/assets/119121592/148d7e27-25ba-4111-a6a8-e5385a78aa25)
 
 2.Ketika memasukkan pencarian berdasarkan kode buku “2”, maka tampilan pada tabel:
